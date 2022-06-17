@@ -2,7 +2,7 @@ name: First workflow
 on:
   push:
     branches:
-      - poc/github_actions
+      - develop
     
   workflow_dispatch:
   
