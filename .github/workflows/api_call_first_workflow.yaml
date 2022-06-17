@@ -1,0 +1,21 @@
+name: First workflow
+on:
+  push:
+    branches:
+      - feature/prasanna_github_actions
+    
+  workflow_dispatch:
+  
+
+jobs:
+  FirstJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get event triggered
+        run: echo "This job triggered by ${{ github.event_name }} event"
+
+  SecondJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get job status
+        run: echo "This job's status is ${{ job.status }}."
