@@ -2,7 +2,7 @@ name: First workflow
 on:
   push:
     branches:
-      - feature/prasanna_github_actions
+      - poc/github_actions
     
   workflow_dispatch:
   
