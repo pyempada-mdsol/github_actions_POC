@@ -5,6 +5,8 @@ on:
       - develop
     
   workflow_dispatch:
+  repository_dispatch:
+    types: [on-api-test]
   
 
 jobs:
